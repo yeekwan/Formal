@@ -1,0 +1,29 @@
+---
+title: "Untitled"
+output: html_document
+---
+# we’ll be wrangling gapminder data using dplyr
+
+```{r,message=FALSE}
+library(tidyverse)
+```
+
+```{r}
+gapminder <- read_csv('Rmaterial1/data/gapminder.csv')
+view(gapminder)
+head(gapminder)
+tail(gapminder)
+```
+
+```{r}
+filter(gapminder,lifeExp<29)
+filter(gapminder,country=="China")
+filter(gapminder,country %in% c("Mexico","China"))
+dat <- filter(gapminder,country=="Brazil",year >=1987 & year <=2007)
+mean(dat$lifeExp)
+```
+```{r}
+library(usethis)
+use_git_config(user.name = "yeekwan", user.email = "422415864@qq.com")
+```
+
