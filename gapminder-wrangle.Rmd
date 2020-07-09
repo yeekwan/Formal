@@ -2,7 +2,7 @@
 title: "Untitled"
 output: html_document
 ---
-# we’ll be wrangling gapminder data using dplyr
+# we’ll be wrangling gapminder data using dplyr!
 
 ```{r,message=FALSE}
 library(tidyverse)
